@@ -5,17 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/12/13 10:45:53 by carlotalcd        #+#    #+#              #
-#    Updated: 2025/12/13 11:35:25 by carlotalcd       ###   ########.fr        #
+#    Created: 2025/12/13 11:18:51 by carlotalcd        #+#    #+#              #
+#    Updated: 2025/12/13 11:35:16 by carlotalcd       ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-NAME = scavtrap
-SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
-HEADER = ClapTrap.hpp ScavTrap.hpp
+NAME = fragtrap
+SRC = main.cpp ClapTrap.cpp FragTrap.cpp
+HEADER = ClapTrap.hpp FragTrap.hpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
