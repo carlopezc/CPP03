@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
+/*   By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 11:15:38 by carlotalcd        #+#    #+#             */
-/*   Updated: 2025/12/13 11:16:16 by carlotalcd       ###   ########.fr       */
+/*   Updated: 2025/12/16 13:22:06 by carlopez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@ int main()
     ScavTrap robot2;
 
     std::cout << "\n--- PROBANDO ACCIONES ---" << std::endl;
-    robot1.attack("Target A"); // Debería decir "ScavTrap... attacks"
+    robot1.attack("Target A");
     robot1.guardGate();
     
-    // Probamos que hereda cosas de ClapTrap
     robot1.takeDamage(50);
     robot1.beRepaired(20);
 

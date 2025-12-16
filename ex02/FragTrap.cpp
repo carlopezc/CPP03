@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: carlotalcd <carlotalcd@student.42.fr>      +#+  +:+       +#+        */
+/*   By: carlopez <carlopez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 11:19:59 by carlotalcd        #+#    #+#             */
-/*   Updated: 2025/12/13 11:28:28 by carlotalcd       ###   ########.fr       */
+/*   Updated: 2025/12/16 13:29:21 by carlopez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,38 +14,38 @@
 
 FragTrap::FragTrap() : ClapTrap()
 {
-    this->HitPoints = 100;
-    this->EnergyPoints = 100;
-    this->AttackDamage = 30;
-    std::cout << "FragTrap constructor called" << std::endl;
+    this->_Name = "default";
+    this->_HitPoints = 100;
+    this->_EnergyPoints = 100;
+    this->_AttackDamage = 30;
+    std::cout << "FragTrap default constructor called" << std::endl;
 }
 
 FragTrap::FragTrap(std::string name) : ClapTrap(name)
 {
-    this->Name = name;
-    this->HitPoints = 100;
-    this->EnergyPoints = 100;
-    this->AttackDamage = 30;
+    this->_Name = name;
+    this->_HitPoints = 100;
+    this->_EnergyPoints = 100;
+    this->_AttackDamage = 30;
     std::cout << "FragTrap constructor called" << std::endl;
 }
 
 FragTrap::~FragTrap()
 {
-    std::cout << "FragTrap Ddestructor called" << std::endl;
+    std::cout << "FragTrap destructor called" << std::endl;
 }
 
 FragTrap& FragTrap::operator=(const FragTrap& other)
 {
     if (this != &other)
     {
-        this->Name = other.Name;
-        this->EnergyPoints = other.EnergyPoints;
-        this->HitPoints = other.HitPoints;
-        this->AttackDamage = other.AttackDamage;
+        this->_Name = other._Name;
+        this->_EnergyPoints = other._EnergyPoints;
+        this->_HitPoints = other._HitPoints;
+        this->_AttackDamage = other._AttackDamage;
     }
     std::cout << "FragTrap copy assignment operator called" << std::endl;
     return (*this);
-    
 }
 
 FragTrap::FragTrap(const FragTrap& other) : ClapTrap(other)
